@@ -7,7 +7,7 @@ import java.io.{FileReader, InputStreamReader}
 
 object SbtConfigPlugin extends Plugin {
 
-    lazy val sampleIntTask = TaskKey[Unit]("jasmine", "Run jasmine tests")
+    lazy val sampleIntTask = TaskKey[Unit]("install", "Installs projects using configuration parameters")
 
     val sbtConfigSettings : Seq[Project.Setting[_]] = Seq(
         sampleIntTask := {
